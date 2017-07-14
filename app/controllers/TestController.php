@@ -1,11 +1,11 @@
 <?php
-
-class TestController extends \Phalcon\Mvc\Controller
+use Phalcon\Mvc\Models;
+class TestController extends ControllerBase
 {
 
     public function indexAction()
     {
-        echo "good";
+        $this->testBase();
     }
 
 }
